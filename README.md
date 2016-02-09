@@ -2,14 +2,9 @@
 
 **After Update all Configuration generate Archetype with command in Terminal:**   
 ```shell
-mvn clean && mvn archetype:create-from-project -DgroupId={project-packaging} -DartifactId={project-name} -DarchetypeArtifactId=springmvc-archetype -DinteractiveMode=false
+mvn clean && mvn archetype:create-from-project -DgroupId={project-packaging} -DartifactId={project-name} -DarchetypeArtifactId=springmvc-archetype -DinteractiveMode=false && cd target/generated-sources/archetype/ && rm -rf target/
 ```   
 
-**after configurate archetype generated:**   
-```shell
-cd target/generated-sources/archetype/
-rm -rf target/
-```   
 
 
 
